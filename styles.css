@@ -1,17 +1,24 @@
+/* modern-normalize to overwrite default browser styling */
 @import 'node_modules/modern-normalize/modern-normalize.css';
+/* Universal styles usable throughout the whole project */
 :root {
     --primary-blue: #2563EB;
     --primary-text: #4B5563;
     --gray-background: #F8F9FA;
     --white-background: #FFFFFF;
+    --center: 0 auto;
+    --card-radius: 10px;
+    --card-margin: 3rem;
+    --card-padding: 8%;
+    --font-size: 1.3rem;
 }
+/* General styling for the body */
 body {
-    height: 100dvh;
-    width: 100dvw;
     display: flex;
     flex-direction: column;
     background-color: var(--gray-background);
 }
+/* Start header styling */
 header {
     display: flex;
     flex-direction: row;
@@ -31,11 +38,32 @@ header ul {
 header a {
     text-decoration: none;
     color: var(--primary-text);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 header a:hover {
     color: var(--primary-blue);
 }
 header > h1 {
     color: var(--primary-blue);
+}
+/* Start main content styling */
+.home {
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: var(--center);
+    margin-top: var(--card-margin);
+}
+.home img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+.home > section:first-child {
+    padding: var(--card-padding);
+    text-align: center;
+    background-color: var(--white-background);
+    border-radius: var(--card-radius);
+    font-size: var(--font-size);
 }
