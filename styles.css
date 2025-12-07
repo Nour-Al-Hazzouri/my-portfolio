@@ -7,10 +7,12 @@
     --gray-background: #F8F9FA;
     --white-background: #FFFFFF;
     --center: 0 auto;
-    --card-radius: 10px;
-    --card-margin: 3rem;
-    --card-padding: 8%;
+    --card-radius: 15px;
+    --card-margin-top: 3rem;
+    --card-margin: 1rem;
+    --card-padding: 6%;
     --font-size: 1.3rem;
+    --icon-width: 50px;
 }
 /* General styling for the body */
 body {
@@ -43,22 +45,25 @@ header a {
 header a:hover {
     color: var(--primary-blue);
 }
-header > h1 {
+header h1 a {
     color: var(--primary-blue);
+    font-size: 1.8rem;
 }
 /* Start main content styling */
 .home {
     max-width: 1200px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, max-content);
     justify-content: center;
     margin: var(--center);
-    margin-top: var(--card-margin);
+    margin-top: var(--card-margin-top);
 }
-.home img {
+.home section > img {
     width: 250px;
     height: auto;
     border-radius: 50%;
+    padding: 5px;
+    border: 5px var(--primary-blue) solid;
 }
 .home > section:first-child {
     padding: var(--card-padding);
@@ -66,4 +71,17 @@ header > h1 {
     background-color: var(--white-background);
     border-radius: var(--card-radius);
     font-size: var(--font-size);
+    margin: var(--card-margin);
+}
+.icons img{
+    width: var(--icon-width);
+    height: auto;
+    margin: 10px;
+}
+section:nth-child(2) {
+    padding: var(--card-padding);
+    background-color: var(--white-background);
+    border-radius: var(--card-radius);
+    font-size: var(--font-size);
+    margin: var(--card-margin);
 }
