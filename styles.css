@@ -1,0 +1,41 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+:root {
+    --primary-blue: #2563EB;
+    --primary-text: #4B5563;
+    --gray-background: #F8F9FA;
+    --white-background: #FFFFFF;
+}
+body {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-background);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 35%;
+    align-items: center;
+    height: 10%;
+    background-color: var(--white-background);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10%;
+}
+header a {
+    text-decoration: none;
+    color: var(--primary-text);
+    font-size: 1.3rem;
+}
+header a:hover {
+    color: var(--primary-blue);
+}
+header > h1 {
+    color: var(--primary-blue);
+}
