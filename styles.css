@@ -12,7 +12,7 @@
     --card-margin-top: 3rem;
     --card-margin: 1rem;
     --card-padding: 6%;
-    --font-size: 1.3rem;
+    --font-size: clamp(1.3rem, 1rem, 2rem);;
     --icon-width: 50px;
     --content-padding: 0 10px 20px 10px;
 }
@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--gray-background);
+    margin-top: 90px;
 }
 /* Start header styling */
 header {
@@ -28,10 +29,13 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 35%;
+    width: 100%;
     align-items: center;
-    height: 10%;
+    height: 90px;
     background-color: var(--white-background);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
 }
 header ul {
     display: flex;
@@ -60,6 +64,8 @@ header h1 a {
     align-items: center;
     margin: var(--center);
     margin-top: var(--card-margin-top);
+    margin-bottom: var(--card-margin-top);
+
 }
 .home section > img {
     width: 250px;
@@ -87,8 +93,8 @@ header h1 a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
     gap: 10px;
+    margin-bottom: var(--card-margin-top);
 }
 .skills > h2 {
     width: 100%;
