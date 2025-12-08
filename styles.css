@@ -1,26 +1,41 @@
+/* modern-normalize to overwrite default browser styling */
 @import 'node_modules/modern-normalize/modern-normalize.css';
+/* Universal styles usable throughout the whole project */
 :root {
     --primary-blue: #2563EB;
     --primary-text: #4B5563;
     --gray-background: #F8F9FA;
     --white-background: #FFFFFF;
+    --blue-background: #EFF6FF;
+    --center: 0 auto;
+    --card-radius: 15px;
+    --card-margin-top: 3rem;
+    --card-margin: 1rem;
+    --card-padding: 6%;
+    --font-size: clamp(1.3rem, 1rem, 2rem);;
+    --icon-width: 50px;
+    --content-padding: 0 10px 20px 10px;
 }
+/* General styling for the body */
 body {
-    height: 100dvh;
-    width: 100dvw;
     display: flex;
     flex-direction: column;
     background-color: var(--gray-background);
+    margin-top: 90px;
 }
+/* Start header styling */
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 35%;
+    width: 100%;
     align-items: center;
-    height: 10%;
+    height: 90px;
     background-color: var(--white-background);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
 }
 header ul {
     display: flex;
@@ -31,11 +46,74 @@ header ul {
 header a {
     text-decoration: none;
     color: var(--primary-text);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 header a:hover {
     color: var(--primary-blue);
 }
-header > h1 {
+header h1 a {
     color: var(--primary-blue);
+    font-size: 1.8rem;
+}
+/* Start main content styling */
+.home {
+    max-width: 70%;
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    margin: var(--center);
+    margin-top: var(--card-margin-top);
+    margin-bottom: var(--card-margin-top);
+
+}
+.home section > img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    border: 5px var(--primary-blue) solid;
+}
+.home > section {
+    padding: var(--card-padding);
+    background-color: var(--white-background);
+    border-radius: var(--card-radius);
+    font-size: var(--font-size);
+    margin: var(--card-margin);
+}
+.home > section:first-child {
+    text-align: center;
+}
+.icons img{
+    width: var(--icon-width);
+    height: auto;
+    margin: 10px;
+}
+.skills {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: var(--card-margin-top);
+}
+.skills > h2 {
+    width: 100%;
+}
+.skills h3+div {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border: .1px rgb(102, 100, 100) solid;
+    padding: var(--content-padding);
+    border-radius: var(--card-radius);
+
+}
+.skills span {
+    margin-top: 20px;
+    background-color: var(--blue-background);
+    color: var(--primary-blue);
+    padding: 10px;
+    border-radius: var(--card-radius);
 }
