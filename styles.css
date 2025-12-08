@@ -43,6 +43,9 @@ header ul {
     list-style: none;
     gap: 10%;
 }
+.home-link {
+    color: var(--primary-blue);
+}
 header a {
     text-decoration: none;
     color: var(--primary-text);
@@ -117,6 +120,7 @@ header h1 a {
     padding: 10px;
     border-radius: var(--card-radius);
 }
+/* Start Footer styling */
 footer {
     display: flex;
     justify-content: center;
