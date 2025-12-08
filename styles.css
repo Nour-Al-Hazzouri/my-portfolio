@@ -117,3 +117,11 @@ header h1 a {
     padding: 10px;
     border-radius: var(--card-radius);
 }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: var(--white-background);
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1);
+}
