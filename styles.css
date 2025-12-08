@@ -43,7 +43,7 @@ header ul {
     list-style: none;
     gap: 10%;
 }
-.home-link {
+.home-link, .education-link {
     color: var(--primary-blue);
 }
 header a {
