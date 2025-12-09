@@ -7,6 +7,7 @@
     --gray-background: #F8F9FA;
     --white-background: #FFFFFF;
     --blue-background: #EFF6FF;
+    --primary-gold: rgb(246, 210, 4);
     --center: 0 auto;
     --card-radius: 15px;
     --card-margin-ver: 3rem;
@@ -158,6 +159,9 @@ main {
 .formal{
     border-left: 5px var(--primary-blue) solid;
 }
+.gold-formal {
+    border-left: 5px var(--primary-gold) solid;
+}
 hr {
     width: 100%;
 }
@@ -187,7 +191,7 @@ hr {
     width: max-content;
     color: #000;
     border-radius: 10px;
-    background-color: gold;
+    background-color: var(--primary-gold);
     font-size: .9rem;
     font-weight: 500;
 }
