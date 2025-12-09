@@ -177,3 +177,12 @@ hr {
 .date + h3 {
     color: var(--primary-blue);
 }
+.label {
+    padding: 5px;
+    width: max-content;
+    color: #000;
+    border-radius: 10px;
+    background-color: gold;
+    font-size: .9rem;
+    font-weight: 500;
+}
