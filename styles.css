@@ -9,12 +9,14 @@
     --blue-background: #EFF6FF;
     --center: 0 auto;
     --card-radius: 15px;
-    --card-margin-top: 3rem;
+    --card-margin-ver: 3rem;
     --card-margin: 1rem;
-    --card-padding: 6%;
+    --card-padding: 3%;
     --font-size: clamp(1.3rem, 1rem, 2rem);;
     --icon-width: 50px;
+    --education-icons: 30px;
     --content-padding: 0 10px 20px 10px;
+    --invert-image: invert(1) hue-rotate(180deg);
 }
 /* General styling for the body */
 body {
@@ -60,16 +62,15 @@ header h1 a {
 }
 /* Start main content styling */
 .home {
-    max-width: 70%;
     display: grid;
     grid-template-rows: repeat(3, max-content);
-    justify-content: center;
-    align-items: center;
     margin: var(--center);
-    margin-top: var(--card-margin-top);
-    margin-bottom: var(--card-margin-top);
+    max-width: 70%;
+    margin-top: var(--card-margin-ver);
+    margin-bottom: var(--card-margin-ver);
 
 }
+
 .home section > img {
     width: 250px;
     height: auto;
@@ -97,7 +98,7 @@ header h1 a {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: var(--card-margin-top);
+    margin-bottom: var(--card-margin-ver);
 }
 .skills > h2 {
     width: 100%;
@@ -128,4 +129,50 @@ footer {
     height: 5rem;
     background-color: var(--white-background);
     box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Education Page */
+/* Start Main content styling */
+main {
+    width: 60%;
+    margin: var(--center);
+}
+.education {
+    width: 100%;
+   display: grid;
+   grid-template-rows: repeat(auto-fit, max-content); 
+   background-color: var(--white-background);
+   padding: var(--card-padding);
+   border-radius: var(--card-radius);
+   margin: var(--card-margin);
+}
+.education:last-child{
+    margin-bottom: var(--card-margin-ver);
+}
+.formal{
+    border-left: 5px var(--primary-blue) solid;
+}
+hr {
+    width: 100%;
+}
+.title {
+    display: flex;
+    gap: 10px;
+    margin-top: var(--card-margin-ver);
+}
+.title img {
+    width: var(--education-icons);
+    height: auto;
+}
+.education > section {
+    display: flex;
+    flex-direction: column;
+}
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.date + h3 {
+    color: var(--primary-blue);
 }
