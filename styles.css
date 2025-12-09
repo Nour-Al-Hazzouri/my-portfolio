@@ -109,9 +109,9 @@ header h1 a {
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    border: .1px rgb(102, 100, 100) solid;
     padding: var(--content-padding);
     border-radius: var(--card-radius);
+    border: 2px #E5E7EB solid;
 
 }
 .skills span {
@@ -145,6 +145,7 @@ main {
    padding: var(--card-padding);
    border-radius: var(--card-radius);
    margin: var(--card-margin);
+   font-size: var(--font-size);
 }
 .education:last-child{
     margin-bottom: var(--card-margin-ver);
