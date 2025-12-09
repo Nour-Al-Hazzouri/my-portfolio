@@ -18,13 +18,7 @@
     --content-padding: 0 10px 20px 10px;
     --invert-image: invert(1) hue-rotate(180deg);
 }
-/* General styling for the body */
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--gray-background);
-    margin-top: 90px;
-}
+
 /* Start header styling */
 header {
     display: flex;
@@ -60,6 +54,26 @@ header h1 a {
     color: var(--primary-blue);
     font-size: 1.8rem;
 }
+
+/* Start Footer styling */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: var(--white-background);
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* General styling for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-background);
+    margin-top: 90px;
+}
+
+/* Home Page */
 /* Start main content styling */
 .home {
     display: grid;
@@ -121,15 +135,6 @@ header h1 a {
     padding: 10px;
     border-radius: var(--card-radius);
 }
-/* Start Footer styling */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-    background-color: var(--white-background);
-    box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1);
-}
 
 /* Education Page */
 /* Start Main content styling */
@@ -137,7 +142,7 @@ main {
     width: 60%;
     margin: var(--center);
 }
-.education {
+.card {
     width: 100%;
    display: grid;
    grid-template-rows: repeat(auto-fit, max-content); 
@@ -147,7 +152,7 @@ main {
    margin: var(--card-margin);
    font-size: var(--font-size);
 }
-.education:last-child{
+.card:last-child{
     margin-bottom: var(--card-margin-ver);
 }
 .formal{
@@ -186,3 +191,6 @@ hr {
     font-size: .9rem;
     font-weight: 500;
 }
+
+/* Experience Page */
+/* Start main content */
