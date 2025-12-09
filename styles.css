@@ -45,7 +45,7 @@ header ul {
     list-style: none;
     gap: 10%;
 }
-.home-link, .education-link {
+.home-link, .education-link, .experience-link {
     color: var(--primary-blue);
 }
 header a {
