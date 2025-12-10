@@ -87,6 +87,7 @@
     gap: 10px;
   }
   footer {
+    margin: var(--center);
     height: var(--header-footer-height);
     width: 100%;
     position: fixed;
