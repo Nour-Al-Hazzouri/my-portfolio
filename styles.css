@@ -42,6 +42,10 @@
         --content-padding: 0 10px 15px 10px;
         --invert-image: invert(1) hue-rotate(180deg);
     }
+    .main {
+    width: 100%;
+    margin: var(--center);
+    }
     .desktop {
         display: none;
     }
@@ -107,9 +111,27 @@
     padding: 5px;
     border: 5px var(--primary-blue) solid;
     }
+    .card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .home {
+        max-width: 100%;
+    }
+    .card {
+        min-width: 200px;
+        margin: var(--center);
+        margin: 1rem;
+    }
 }
 
 @media screen and (min-width: 769px) {
+    main {
+    width: 60%;
+    margin: var(--center);
+    }
     body {
         margin-top: var(--header-footer-height);
     }
@@ -145,7 +167,16 @@
     border-radius: 50%;
     padding: 5px;
     border: 5px var(--primary-blue) solid;
+    }
+    .home {
+    max-width: 70%;
+    }
+    .card {
+        padding: var(--card-padding);
+        margin: var(--card-margin);
+        font-size: var(--font-size);
 }
+
 }
 /* Start header styling */
 .home-link, .education-link, .experience-link {
@@ -166,7 +197,6 @@
 
 /* Start Footer styling */
 footer {
-    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,14 +217,11 @@ body {
 /* Home Page */
 /* Start main content styling */
 .home {
-    min-width: 200px;
     display: flex;
     flex-direction: column;
     margin: var(--center);
-    max-width: 70%;
     margin-top: var(--card-margin-ver);
     margin-bottom: var(--card-margin-ver);
-
 }
 .home > section {
     padding: var(--card-padding);
@@ -242,20 +269,9 @@ body {
 
 /* Education Page */
 /* Start Main content styling */
-main {
-    width: 60%;
-    margin: var(--center);
-}
 .card {
-    min-width: 200px;
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr); 
     background-color: var(--white-background);
-    padding: var(--card-padding);
     border-radius: var(--card-radius);
-    margin: var(--card-margin);
-    font-size: var(--font-size);
 }
 .card:last-child{
     margin-bottom: var(--card-margin-ver);
