@@ -40,6 +40,10 @@
     --content-padding: 0 10px 15px 10px;
     --invert-image: invert(1) hue-rotate(180deg);
   }
+  body {
+    margin-top: 1rem;
+    margin-bottom: var(--header-footer-height);
+  }
   h1 {
     font-size: 1.1rem;
   }
@@ -79,16 +83,11 @@
     margin: var(--center);
     margin: 1rem;
   }
-  .title:first-child {
-    margin-top: 2rem;
-  }
-  .card:last-child, .home section:last-child{
-    margin-bottom: 100px;
-  }
   .title {
     gap: 10px;
   }
   footer {
+    height: var(--header-footer-height);
     width: 100%;
     position: fixed;
     bottom: 0;
