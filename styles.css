@@ -2,18 +2,23 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
 /* Universal styles usable throughout the whole project */
 :root {
+    /* Colors */
     --primary-blue: #2563EB;
     --primary-text: #4B5563;
     --gray-background: #F8F9FA;
     --white-background: #FFFFFF;
     --blue-background: #EFF6FF;
     --primary-gold: rgb(246, 210, 4);
+    /* Measurements */
+    --header-footer-height: 90px;
     --center: 0 auto;
     --card-radius: 15px;
-    --card-margin-ver: 3rem;
+    --card-margin-ver: 1.5rem;
     --card-margin: 1rem;
     --card-padding: 3%;
-    --font-size: clamp(1.3rem, 1rem, 2rem);;
+    --padding-10: 10px;
+    --gap-10: 10px;
+    --font-size: clamp(1rem, 2vw, 1.25rem);
     --icon-width: 50px;
     --education-icons: 30px;
     --content-padding: 0 10px 20px 10px;
@@ -28,7 +33,7 @@ header {
     gap: 35%;
     width: 100%;
     align-items: center;
-    height: 90px;
+    height: var(--header-footer-height);
     background-color: var(--white-background);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -38,7 +43,7 @@ header ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 10%;
+    gap: 35px;
 }
 .home-link, .education-link, .experience-link {
     color: var(--primary-blue);
@@ -46,7 +51,7 @@ header ul {
 header a {
     text-decoration: none;
     color: var(--primary-text);
-    font-size: 1.2rem;
+    font-size: var(--font-size);
 }
 header a:hover {
     color: var(--primary-blue);
@@ -61,7 +66,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    height: var(--header-footer-height);
     background-color: var(--white-background);
     box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1);
 }
@@ -71,7 +76,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--gray-background);
-    margin-top: 90px;
+    margin-top: var(--header-footer-height);
 }
 
 /* Home Page */
@@ -112,7 +117,7 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: var(--gap-10);
     margin-bottom: var(--card-margin-ver);
 }
 .skills > h2 {
@@ -122,7 +127,7 @@ body {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: var(--gap-10);
     align-items: center;
     padding: var(--content-padding);
     border-radius: var(--card-radius);
@@ -133,7 +138,7 @@ body {
     margin-top: 20px;
     background-color: var(--blue-background);
     color: var(--primary-blue);
-    padding: 10px;
+    padding: var(--padding-10);
     border-radius: var(--card-radius);
 }
 
@@ -145,13 +150,13 @@ main {
 }
 .card {
     width: 100%;
-   display: grid;
-   grid-template-rows: repeat(auto-fit, max-content); 
-   background-color: var(--white-background);
-   padding: var(--card-padding);
-   border-radius: var(--card-radius);
-   margin: var(--card-margin);
-   font-size: var(--font-size);
+    display: grid;
+    grid-template-rows: repeat(auto-fit, max-content); 
+    background-color: var(--white-background);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    margin: var(--card-margin);
+    font-size: var(--font-size);
 }
 .card:last-child{
     margin-bottom: var(--card-margin-ver);
@@ -167,7 +172,7 @@ hr {
 }
 .title {
     display: flex;
-    gap: 10px;
+    gap: var(--gap-10);
     margin-top: var(--card-margin-ver);
     padding-left: 20px;
 }
@@ -197,5 +202,22 @@ hr {
     font-weight: 500;
 }
 
-/* Experience Page */
-/* Start main content */
+/* Start additional features */
+.credentials {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: var(--gray-background);
+    border: 1px #000 solid;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    gap: var(--gap-10);
+}
+.credentials img {
+    width: 30px;
+    height: auto;
+}
