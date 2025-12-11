@@ -330,6 +330,9 @@ hr {
   display: flex;
   padding-left: 20px;
 }
+.title h1 {
+  color: #FFF;
+}
 .title img {
   width: var(--education-icons);
   height: auto;
