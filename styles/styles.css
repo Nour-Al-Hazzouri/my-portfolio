@@ -16,7 +16,7 @@
   --card-padding: 3%;
   --padding-10: 10px;
   --gap-10: 10px;
-  --font-size: clamp(1rem, 2vw, 1.25rem);
+  --font-size: clamp(0.9rem, 1.5vw, 1rem);
   --icon-width: 50px;
   --education-icons: 30px;
   --content-padding: 0 10px 20px 10px;
@@ -33,7 +33,6 @@
     --card-padding: 2%;
     --padding-10: 8px;
     --gap-10: 8px;
-    --font-size: clamp(0.9rem, 1.5vw, 1rem);
     --education-icons: 30px;
     --content-padding: 0 10px 15px 10px;
     --invert-image: invert(1) hue-rotate(180deg);
@@ -224,7 +223,7 @@ body {
   text-align: center;
 }
 .home section > img {
-  width: clamp(200px, 20vw, 700px);
+  width: clamp(200px, 15vw, 600px);
   height: auto;
   border-radius: 50%;
   padding: 5px;
