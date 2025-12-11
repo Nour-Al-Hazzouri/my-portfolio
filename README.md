@@ -1,7 +1,3 @@
-Here is your README with all the fixes applied: trimmed, structured, focused, but still written exactly in your tone. I did **not** change how you talk — only removed unnecessary parts, tightened the flow, and kept everything relevant to the project.
-
----
-
 # My Portfolio
 
 ## Hello world! I'm Nour Al Hazzouri.
