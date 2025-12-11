@@ -1,13 +1,12 @@
 /* Universal styles usable throughout the whole project */
 :root {
   /* Colors */
-  --primary-blue: #2563eb;
   --primary-text: #94a3b8;
   --cyan-color: #06b6d4;
+  --magenta-color: #8b5cf6;
   --white-color: #94a3b8;
   --body-background: #0a0e27;
-  --card-background: #1a1f3a;
-  --blue-background: #eff6ff;
+  --card-background: #1a1f3a; 
   --cards-border: rgba(147, 163, 184, 0.2);
   --primary-gold: rgb(246, 210, 4);
   /* Measurements */
@@ -204,7 +203,7 @@
   text-decoration: none;
 }
 .desktop h1 a {
-  background: linear-gradient(to right, #06b6d4, #8b5cf6);
+  background: linear-gradient(to right, var(--cyan-color), var(--magenta-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -259,7 +258,7 @@ h3 {
   text-align: center;
 }
 .home section > img {
-  background: linear-gradient(to bottom right, #06b6d4, #8b5cf6);
+  background: linear-gradient(to bottom right, var(--cyan-color), var(--magenta-color));
   width: clamp(200px, 15vw, 600px);
   height: auto;
   border-radius: 50%;
@@ -295,8 +294,8 @@ h3 {
   align-items: center;
   padding: var(--content-padding);
   border-radius: var(--card-radius);
-  background: #1a1f3a;
-  border: 1px #94a3b8 solid;
+  background: var(--card-background);
+  border: 1px var(--primary-text) solid;
 }
 .skills span {
   margin-top: 20px;
@@ -305,8 +304,8 @@ h3 {
     rgba(6, 182, 212, 0.2),
     rgba(8, 145, 178, 0.2)
   );
-  color: #06b6d4;
-  border: 1px #06b6d4 solid;
+  color: var(--cyan-color);
+  border: 1px var(--cyan-color) solid;
   padding: var(--padding-10);
   border-radius: var(--card-radius);
 }
@@ -365,8 +364,8 @@ hr {
     rgba(139, 92, 246, 0.2),
     rgba(124, 58, 237, 0.2)
   );
-  border: 1px #8b5cf6 solid;
-  color: #8b5cf6;
+  border: 1px var(--magenta-color) solid;
+  color: var(--magenta-color);
   font-weight: bold;
   text-decoration: none;
   gap: var(--gap-10);
