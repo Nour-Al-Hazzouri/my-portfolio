@@ -40,7 +40,7 @@ As the project grew, the hardest part was finding which piece of code was causin
 
 ## What does this project mean to me?
 
-A **milestone**. I like keeping my old projects and even merged branches on GitHub to remind myself where I started. I hope that as I keep building more projects over the next 1.5 years (currently a TS2 student), I’ll clearly see my improvement from milestone to milestone.
+A **milestone**. I like keeping my old projects to remind myself where I started. I hope that as I keep building more projects over the next 1.5 years (currently a TS2 student, 1.5 more years to graduate), I’ll clearly see my improvement from milestone to milestone.
 
 ## Resources
 These are the two main learning resources that helped me build the foundations I relied on in this project:
